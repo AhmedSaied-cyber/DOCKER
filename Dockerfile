@@ -1,9 +1,9 @@
 FROM openjdk
 
-MORKDIR/application
+WORKDIR /app
 
-COPY ahmad.java .
+COPY ahmed.java .
 
-RUN Javac ahmad.java
+RUN javac ahmed.java
 
-CMD java ahmad
+CMD java ahmed
