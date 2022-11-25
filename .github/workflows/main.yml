@@ -12,14 +12,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 'testing Gitnub action'
-        run: pwd
-
-      - name: 'before'
-        run: ls
-
-
       - uses: action/checkout@v3
+      - name: "login to docker hub"
+        run: docker login --username ahmedsaiedsalem --passwoed dckr_pat_EH5vXo5_rVwk9xdC7d8zwPzKZT8
 
-      - name: 'after'
-        run: ls
+      
+
